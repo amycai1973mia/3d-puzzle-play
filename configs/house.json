@@ -1,0 +1,16 @@
+{
+  "id": "house", "icon": "🏠", "name": { "zh": "房子", "en": "House" },
+  "model": "models/house.glb", "source": "Kenney City Kit (Suburban) building-type-g, CC0; split by split_house.py",
+  "mode": "nodes",
+  "parts": [
+    { "id": "base", "label": { "zh": "地基", "en": "Base" }, "nodes": ["base"] },
+    { "id": "walls", "label": { "zh": "墙", "en": "Walls" }, "nodes": ["walls"] },
+    { "id": "windows", "label": { "zh": "门窗", "en": "Door & Windows" }, "nodes": ["windows"] },
+    { "id": "roof", "label": { "zh": "屋顶", "en": "Roof" }, "nodes": ["roof"] },
+    { "id": "chimney", "label": { "zh": "烟囱", "en": "Chimney" }, "nodes": ["chimney"] }
+  ],
+  "difficulties": {
+    "easy":   { "snapDistance": 0.18, "snapAngleDeg": 180, "autoOrient": true,  "ghostHint": true },
+    "normal": { "snapDistance": 0.09, "snapAngleDeg": 30,  "autoOrient": false, "ghostHint": true }
+  }
+}
