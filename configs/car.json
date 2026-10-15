@@ -1,16 +1,84 @@
 {
-  "id": "car", "icon": "🚗", "name": { "zh": "汽车", "en": "Car" },
-  "model": "models/car.glb", "source": "Kenney Car Kit taxi.glb, CC0",
-  "mode": "nodes", "yawDeg": 35,
-  "parts": [
-    { "id": "body", "label": { "zh": "车身", "en": "Body" }, "nodes": ["body"] },
-    { "id": "wheel-front-left", "label": { "zh": "轮子", "en": "Wheel" }, "nodes": ["wheel-front-left"], "group": "wheel" },
-    { "id": "wheel-front-right", "label": { "zh": "轮子", "en": "Wheel" }, "nodes": ["wheel-front-right"], "group": "wheel" },
-    { "id": "wheel-back-left", "label": { "zh": "轮子", "en": "Wheel" }, "nodes": ["wheel-back-left"], "group": "wheel" },
-    { "id": "wheel-back-right", "label": { "zh": "轮子", "en": "Wheel" }, "nodes": ["wheel-back-right"], "group": "wheel" }
-  ],
-  "difficulties": {
-    "easy":   { "snapDistance": 0.18, "snapAngleDeg": 180, "autoOrient": true,  "ghostHint": true },
-    "normal": { "snapDistance": 0.09, "snapAngleDeg": 30,  "autoOrient": false, "ghostHint": true }
+ "id": "car",
+ "icon": "🚗",
+ "name": {
+  "zh": "汽车",
+  "en": "Car"
+ },
+ "model": "models/car.glb",
+ "source": "Kenney Car Kit taxi.glb, CC0",
+ "mode": "nodes",
+ "yawDeg": 35,
+ "parts": [
+  {
+   "id": "body",
+   "label": {
+    "zh": "车身",
+    "en": "Body"
+   },
+   "nodes": [
+    "body"
+   ]
+  },
+  {
+   "id": "wheel-front-left",
+   "label": {
+    "zh": "轮子",
+    "en": "Wheel"
+   },
+   "nodes": [
+    "wheel-front-left"
+   ],
+   "group": "wheel"
+  },
+  {
+   "id": "wheel-front-right",
+   "label": {
+    "zh": "轮子",
+    "en": "Wheel"
+   },
+   "nodes": [
+    "wheel-front-right"
+   ],
+   "group": "wheel"
+  },
+  {
+   "id": "wheel-back-left",
+   "label": {
+    "zh": "轮子",
+    "en": "Wheel"
+   },
+   "nodes": [
+    "wheel-back-left"
+   ],
+   "group": "wheel"
+  },
+  {
+   "id": "wheel-back-right",
+   "label": {
+    "zh": "轮子",
+    "en": "Wheel"
+   },
+   "nodes": [
+    "wheel-back-right"
+   ],
+   "group": "wheel"
   }
+ ],
+ "difficulties": {
+  "easy": {
+   "snapDistance": 0.18,
+   "snapAngleDeg": 180,
+   "autoOrient": true,
+   "ghostHint": true,
+   "merge": []
+  },
+  "medium": {
+   "snapDistance": 0.1,
+   "snapAngleDeg": 30,
+   "autoOrient": false,
+   "ghostHint": true
+  },
+  "hard": null
+ }
 }

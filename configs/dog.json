@@ -1,122 +1,130 @@
 {
-  "id": "dog",
-  "icon": "🐶",
-  "name": {
-    "zh": "小狗",
-    "en": "Dog"
+ "id": "dog",
+ "icon": "🐶",
+ "name": {
+  "zh": "小狗",
+  "en": "Dog"
+ },
+ "model": "models/dog.glb",
+ "source": "Quaternius Dog (poly.pizza), CC0; split by dominant skin weight at load",
+ "mode": "bones",
+ "yawDeg": -50,
+ "parts": [
+  {
+   "id": "head",
+   "label": {
+    "zh": "头",
+    "en": "Head"
+   },
+   "bones": [
+    "Head",
+    "Head_end",
+    "Head_end_end"
+   ]
   },
-  "model": "models/dog.glb",
-  "source": "Quaternius Dog (poly.pizza), CC0; split by dominant skin weight at load",
-  "mode": "bones",
-  "yawDeg": -50,
-  "parts": [
-    {
-      "id": "head",
-      "label": {
-        "zh": "头",
-        "en": "Head"
-      },
-      "bones": [
-        "Head",
-        "Head_end",
-        "Head_end_end"
-      ]
-    },
-    {
-      "id": "body",
-      "label": {
-        "zh": "身体",
-        "en": "Body"
-      },
-      "bones": [
-        "Body",
-        "Root",
-        "Root_end",
-        "Root_end_end",
-        "All",
-        "Tail",
-        "Tail_end",
-        "Tail_end_end"
-      ]
-    },
-    {
-      "id": "front-left-leg",
-      "label": {
-        "zh": "左前腿",
-        "en": "Front Left Leg"
-      },
-      "bones": [
-        "FrontLeg.L",
-        "FrontLeg.L_end",
-        "FrontLeg.L_end_end"
-      ]
-    },
-    {
-      "id": "front-right-leg",
-      "label": {
-        "zh": "右前腿",
-        "en": "Front Right Leg"
-      },
-      "bones": [
-        "FrontLeg.R",
-        "FrontLeg.R_end",
-        "FrontLeg.R_end_end"
-      ]
-    },
-    {
-      "id": "back-left-leg",
-      "label": {
-        "zh": "左后腿",
-        "en": "Back Left Leg"
-      },
-      "bones": [
-        "BackLeg.L",
-        "BackLeg.L_end",
-        "BackLeg.L_end_end"
-      ]
-    },
-    {
-      "id": "back-right-leg",
-      "label": {
-        "zh": "右后腿",
-        "en": "Back Right Leg"
-      },
-      "bones": [
-        "BackLeg.R",
-        "BackLeg.R_end",
-        "BackLeg.R_end_end"
-      ]
-    }
-  ],
-  "difficulties": {
-    "easy": {
-      "snapDistance": 0.18,
-      "snapAngleDeg": 180,
-      "autoOrient": true,
-      "ghostHint": true
-    },
-    "normal": {
-      "snapDistance": 0.09,
-      "snapAngleDeg": 30,
-      "autoOrient": false,
-      "ghostHint": true,
-      "extraParts": [
-        {
-          "id": "tail",
-          "label": {
-            "zh": "尾巴",
-            "en": "Tail"
-          },
-          "bones": [
-            "Tail",
-            "Tail_end",
-            "Tail_end_end"
-          ],
-          "takeFrom": "body",
-          "scale": 1.8,
-          "minHit": 0.95
-        }
-      ]
-    }
+  {
+   "id": "body",
+   "label": {
+    "zh": "身体",
+    "en": "Body"
+   },
+   "bones": [
+    "Body",
+    "Root",
+    "Root_end",
+    "Root_end_end",
+    "All"
+   ]
+  },
+  {
+   "id": "front-left-leg",
+   "label": {
+    "zh": "左前腿",
+    "en": "Front Left Leg"
+   },
+   "bones": [
+    "FrontLeg.L",
+    "FrontLeg.L_end",
+    "FrontLeg.L_end_end"
+   ]
+  },
+  {
+   "id": "front-right-leg",
+   "label": {
+    "zh": "右前腿",
+    "en": "Front Right Leg"
+   },
+   "bones": [
+    "FrontLeg.R",
+    "FrontLeg.R_end",
+    "FrontLeg.R_end_end"
+   ]
+  },
+  {
+   "id": "back-left-leg",
+   "label": {
+    "zh": "左后腿",
+    "en": "Back Left Leg"
+   },
+   "bones": [
+    "BackLeg.L",
+    "BackLeg.L_end",
+    "BackLeg.L_end_end"
+   ]
+  },
+  {
+   "id": "back-right-leg",
+   "label": {
+    "zh": "右后腿",
+    "en": "Back Right Leg"
+   },
+   "bones": [
+    "BackLeg.R",
+    "BackLeg.R_end",
+    "BackLeg.R_end_end"
+   ]
+  },
+  {
+   "id": "tail",
+   "label": {
+    "zh": "尾巴",
+    "en": "Tail"
+   },
+   "bones": [
+    "Tail",
+    "Tail_end",
+    "Tail_end_end"
+   ],
+   "scale": 1.8,
+   "minHit": 0.95
   }
+ ],
+ "difficulties": {
+  "easy": {
+   "snapDistance": 0.18,
+   "snapAngleDeg": 180,
+   "autoOrient": true,
+   "ghostHint": true,
+   "merge": [
+    {
+     "id": "body",
+     "label": {
+      "zh": "身体",
+      "en": "Body"
+     },
+     "from": [
+      "body",
+      "tail"
+     ]
+    }
+   ]
+  },
+  "medium": {
+   "snapDistance": 0.1,
+   "snapAngleDeg": 30,
+   "autoOrient": false,
+   "ghostHint": true
+  },
+  "hard": null
+ }
 }
